@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poké-Dex Elemental Gallery</title>
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1 class="gallery-title">Poké-Dex Elemental Database</h1>
+        <p class="gallery-subtitle">Hover over an elemental starter below to analyze combat data</p>
+    </header>
+
+    <main class="gallery-container">
+        <!-- Main Display Frame (Target of DOM manipulation) -->
+        <div id="image">
+            Hover over an image below to display here.
+        </div>
+
+        <!-- Thumbnail Gallery Grid -->
+        <section class="preview-strip" aria-label="Pokémon Selectors">
+            <img class="preview" alt="Charizard — Fire / Flying Type | Flame Pokémon" src="images/charizard.jpg"
+                onmouseover="upDate(this)" onmouseout="undo()">
+
+            <img class="preview" alt="Blastoise — Water Type | Shellfish Pokémon" src="images/blastoise.jpg"
+                onmouseover="upDate(this)" onmouseout="undo()">
+
+            <img class="preview" alt="Venusaur — Grass / Poison Type | Seed Pokémon" src="images/venusaur.jpg"
+                onmouseover="upDate(this)" onmouseout="undo()">
+        </section>
+    </main>
+
+    <footer>
+        <p>Interactive JavaScript Project &bull; Kanto Edition</p>
+    </footer>
+
+    <!-- External JavaScript File -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
